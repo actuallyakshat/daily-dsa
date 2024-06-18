@@ -3,14 +3,14 @@ import Image from "next/image";
 
 export function LandingOrbit() {
   return (
-    <div className="bg-background relative flex min-h-[700px] w-full max-w-screen-xl items-center justify-center overflow-hidden">
-      <span className="pointer-events-none z-[9] whitespace-pre-wrap bg-gradient-to-b from-black to-primary/80 bg-clip-text text-center text-8xl font-black leading-none text-transparent dark:from-white dark:to-slate-900/10">
+    <div className="relative flex min-h-[700px] w-[900px] scale-[0.6] items-center justify-center overflow-hidden sm:scale-100 md:max-w-screen-xl">
+      <span className="pointer-events-none z-[9] whitespace-pre-wrap bg-gradient-to-b from-black to-primary/80 bg-clip-text text-center text-7xl font-black leading-none text-transparent dark:from-white dark:to-slate-900/10">
         Daily DSA
       </span>
 
       {/* Inner Circles */}
       <OrbitingCircles
-        className="z-[9] w-full max-w-[100px] border-none bg-transparent"
+        className="z-[10] w-full max-w-[100px] border-none bg-transparent"
         duration={20}
         delay={20}
         radius={140}
