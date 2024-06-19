@@ -3,8 +3,8 @@ import Image from "next/image";
 
 export function LandingOrbit() {
   return (
-    <div className="bg-background relative flex min-h-[700px] w-full max-w-screen-xl items-center justify-center overflow-hidden">
-      <span className="pointer-events-none z-[9] whitespace-pre-wrap bg-gradient-to-b from-black to-primary/80 bg-clip-text text-center text-8xl font-black leading-none text-transparent dark:from-white dark:to-slate-900/10">
+    <div className="relative flex min-h-[700px] min-w-[800px] scale-50 items-center justify-center overflow-hidden bg-background sm:scale-100">
+      <span className="pointer-events-none z-[9] whitespace-pre-wrap bg-gradient-to-b from-black to-primary/80 bg-clip-text text-center text-8xl font-black leading-none text-transparent">
         Daily DSA
       </span>
 
