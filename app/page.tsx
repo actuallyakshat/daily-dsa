@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 
 export default function Home() {
   return (
-    <main className="relative flex h-full min-h-screen flex-col items-center justify-center overflow-hidden pt-14">
+    <main className="relative flex h-full min-h-screen flex-col items-center justify-center pt-14">
       <LandingOrbit />
       <DotPattern
         className={cn(
