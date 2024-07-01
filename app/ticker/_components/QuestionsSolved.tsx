@@ -6,13 +6,14 @@ import React, { useEffect, useCallback } from "react";
 import { updateQuestionsSolved } from "../_actions/actions";
 import { debounce } from "lodash";
 import toast from "react-hot-toast";
+import Loading from "@/app/loading";
 
 const updateSolvedHandler = debounce(async (userId, solved) => {
   await updateQuestionsSolved(userId, solved);
 }, 1200);
 
 export default function QuestionsSolved() {
-  const { user } = useAuth();
+  const { user, loading } = useAuth();
   const router = useRouter();
   if (!user) router.replace("/signin");
   const [solved, setSolved] = React.useState(user?.questionsSolved || 0);
@@ -32,6 +33,8 @@ export default function QuestionsSolved() {
   const increment = () => {
     setSolved((prevSolved) => prevSolved + 1);
   };
+
+  if (loading) return <Loading />;
 
   return (
     <div className="flex w-full items-center justify-between">

@@ -2,7 +2,6 @@
 import { useRouter } from "next/navigation";
 import React from "react";
 import { useAuth } from "@/context/auth-context";
-import toast from "react-hot-toast";
 
 export default function LoginForm() {
   const router = useRouter();
